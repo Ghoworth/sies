@@ -1,15 +1,255 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<!DOCTYPE html>
 <html>
+
 <head>
-<!-- Created with Inspiration® - http://www.inspiration.com -->
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<meta name="GENERATOR" content="Inspiration 10.11 IE">
-	<meta name="ORIGINATOR" content="Inspiration 10.11 IE">
-	<title>Evaluation Tool</title>
+    <title>Smart Integrated Energy System</title>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <!--Add Your Scripts -->
+
+    <!--Bootstrap Css / Javascript  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../stylesheet/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
+
 <body>
-<h1><FONT SIZE="4" COLOR="#000000" FACE="Comic Sans MS"><b>Evaluation Tool</b></FONT></h1>
-<p>Back to <a href="valuation.html">Valuation</a></p>
-<p><a href="../fff02.html">Home</a></p>
+<!-- Cookie Consent by TermsFeed https://www.TermsFeed.com -->
+<script type="text/javascript" src="https://www.termsfeed.com/public/cookie-consent/4.1.0/cookie-consent.js" charset="UTF-8"></script>
+<script type="text/javascript" charset="UTF-8">
+document.addEventListener('DOMContentLoaded', function () {
+cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palette":"dark","language":"en","page_load_consent_levels":["strictly-necessary"],"notice_banner_reject_button_hide":false,"preferences_center_close_button_hide":false,"page_refresh_confirmation_buttons":false,"website_privacy_policy_url":"https://sies-project.com/privacy.html","website_name":"www.sies-project.com"});
+});
+</script>
+
+<noscript>Free cookie consent management tool by <a href="https://www.termsfeed.com/">TermsFeed</a></noscript>
+<!-- End Cookie Consent by TermsFeed https://www.TermsFeed.com -->
+
+
+
+
+
+<!-- Below is the link that users can use to open Preferences Center to change their preferences. Do not modify the ID parameter. Place it where appropriate, style it as needed. -->
+
+<a href="#" id="open_preferences_center">Update cookies preferences</a>
+
+
+
+    <header>
+
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid" >
+
+                <div class="align_left" >
+                    <img id="SIES_logo" src="../images/SIES_logo.png">
+                </div>
+
+                <div class="Navigation_bar align_right">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon" onclick="myFunction()"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarNav" >
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    About
+                                </a>
+                                <ul class="dropdown-menu align_left">
+                                    <li><a class="dropdown-item" href="usecase_land.html">Use-Cases</a></li>
+                                    <li><a class="dropdown-item" href="#">Work Packages</a></li>
+                                    <li><a class="dropdown-item" href="../partners.html">Partners</a></li>
+                                    <li><a class="dropdown-item" href="../Supporters.html">Supporting Partners</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="../video.html">Videos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../download.html">Downloads</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../solutions.html">Solutions Library</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../contact.html">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../project.html">Project</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <div id="wrap_outer">
+        <div id="wrap">
+            <div id="wrap_inner">
+
+                <div id="display">
+                    <div class="align_center">
+                        <div id="carouselExampleIndicators" class="carousel slide">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                                    aria-label="Slide 4"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <!--Add Images by Src " "-->
+                                    <img src="../images\bjorn-snelders-Cd3Ek7rNXSk-unsplash.jpg"
+                                        class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <!--Add Images by Src " "-->
+                                    <img src="../images/eric-welch-XucH5JNRFig-unsplash.jpg"
+                                        class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <!--Add Images by Src " "-->
+                                    <img src="../images/jack-anstey-XVoyX7l9ocY-unsplash.jpg"
+                                        class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <!--Add Images by Src " "-->
+                                    <img src="../images/reuben-teo-fUZWpaUknyI-unsplash.jpg"
+                                        class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id="body">
+                    <div class="body_container">
+                        <br>
+                        <h1>Asset Choice and Value </h1>
+                        <br><br>
+
+                        <br>
+                        <h3>Selecting the Appropriate Assets</h3><br><br>
+                            <p> Choosing which assets to incorporate into a VPP system  could be as simple as using the assets currently available to particular owners.  Where assets are to be sourced in the future, the judicious selection of assets will have an impact on financial performance and becomes more of an involved process.  Essentially the VPP developer needs to calculate the benefit to them of operating a VPP. That is do the benefits or revenues outweighh the costs. In particular VPP developers should consider:
+
+                        <ul class="a" style="list-style-type; circle; color: #000;">
+                                <li>  Location of assets </li>
+                                <li> Grid conditions around assets location (Need for flexibility and limits on export/imports)</li>
+                                <li>Markets Available (and prices which drives potential revenues)</li>
+                                <li>Asset characteristics e.g. Wind output, variability of the output. </li>
+                            </ul>
+
+                                Using third party VPP solutions will incur costs, depending on the commercial arrangements.  Additional fees may be required for specific modules (Machine learning, Weather forecasting etc).  Upfront fees for third party software and subsequent &quot;maintenance  or use fees&quot; will determine the minimum level of revenues  (the &quot;break-even revenue&quot;) and assets required.
+                                Similarly for home-grown solutions there will be costs associated with access to markets and for services such as weather forecasts as well as for the development of the system.
+
+                                The addition of new assets will result in the addition of new capex and opex, which may or may not be remunerated by the use of VPP.
+
+                        <br><br>
+                        <h3>Using the Spreadsheet Calculator</h3><br>
+                                <p>
+                                The embedded spreadsheet shown below, can be used to calculate yearly profits, for a set of assets providing X MW at a certain utilisation.  Onshore Wind assets typically have utilisations of around 30% whilst Solar PV only around 10%.  You can download for use offline.  Note some of the yellow cells have formulas in and are driven off some of the other inputs.  You are welcome to overwrite these.
+                                Note No carbon benefits have been shown.
+                                <br><br><strong>Annualized Capital Costs/Charge (ACC)</strong> <br>
+                                Capital costs have been represented as Annualized Capital charges in the yearly profit statements.  They have been calculated using the number of years and an appropriate discount rate.
+
+                                    <br><br><strong>Flexibility Market Assumptions</strong> <br>
+                                The markets are represented as a simple availability and utilisation charge and based on the current markets for DSO&apos;s/DNO&apos;s  e.g. via Piclo.  DSO&apos;s/DNO&apos;s  would be looking for flexibility for a number of hours during the year at specific locations.
+                                    They would typically pay an availability fee &pound;/MW/h for the hours on standby whether dispatched or not and a utilisation fee for actual energy dispatched or reduced &pound;/MWh.  Users can input this data.  Some typical values have been input as a starting point but this will be location specific. Note the spreadsheet assumes that volumes are put aside for DSO/DNO flex they would not be able to be used in other markets.  Other Specific markets might allow for flexibility to be sold in to multiple markets.
+
+                                    <br><br><strong>Business Model and Choice</strong> <br>
+                                    Asset choice is but one element or dimension of the overall VPP Business model.  We refer you to the Business model section of the solution library for further information.
+
+                                    <br><br><strong>Warranty and use of the spreadsheet</strong> <br>
+                                All publications/Presentations/Spreadsheets by SIES Project are based on information and opinions from a variety of sources which have not been subjected to extensive verification. No representation or warranty is given by the SIES Project as to the accuracy or completeness of the information and opinions contained in such publications or to the validity of spreadsheets etc provided as scoping tools.  Users will need to perform their own due diligence and valuations before making investments. The SIES Project do not accept any responsibility for the accuracy or sufficiency of any of the information or opinions or for any direct, indirect or consequential loss or damage suffered by any person as a result of relying on such publications/spreadsheets/tools or on the information and opinions therein. The user of this work/spreadsheets shall indemnify SIES Project arising from such disclosure, reproduction or copying.
+
+                                <br><br> The spreadsheet might take a few seconds to appear!!<br><br>
+
+                            </p>
+
+                            <div>
+                                <iframe width="900" height="800" frameborder="0" scrolling="no" src="https://1drv.ms/x/c/c77d533f270ca78f/IQMWcx3C3m60TooB-QYLpa9CAaILK3tQtAgtOK_NgLeDh3Q?wdAllowInteractivity=False&AllowTyping=True&ActiveCell='Sheet1'!H5&Item='Sheet1'!B1%3AO36&wdHideGridlines=True&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True"></iframe>
+                            </div>
+
+
+
+
+
+                    </div>
+                </div>
+
+                <div class="spacer"></div>
+                <!--Repeat Every Page -->
+                <div id="afterthought">
+                    <div class="align_center">
+                        <h5>An Enhanced Virtual Power Plant (VPP) + Energy Pool Integration for Local and Regional Resistance
+                        </h5>
+                    </div>
+                </div>
+                <div class="spacer"></div>
+                <br>
+                <footer>
+                    <div class="footer">
+                        <div class="footer_inner">
+                            <div class="grid_2">
+                                <div class="align_left">
+                                    <a style="list-style-type:none; text-decoration: none; color: #0078ae; font-size: 0.8rem;"
+                                       href="https://www.strath.ac.uk/engineering/">
+                                        SIES Project <br>
+                                        <a href="https://twitter.com/SiesProjectVPP?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @SiesProjectVPP</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                                        <br><br>
+                                        <p style="font-size: 0.6rem;"> Site Design &copy; 2023 Ailean & Gary Howorth</p>
+                                    </a>
+                                </div>
+
+                                <div class="align_right grid_3">
+                                    <img src="../images/SIES_logo.png" id="SIES_footer_logo" class="footer_images">
+                                    <a href="https://www.scottish-enterprise.com/"><img src="../images/scottish-enterprise-logo-vector.jpg" id="Scottish Enterprise_logo" class="footer_images"></a>
+                                    <a class="footer_images" href="https://www.era-learn.eu/network-information/networks/en-sgplusregsys/1st-regsys-joint-call-2018/smart-integrated-energy-systems-2022-enhanced-virtual-power-plant-vpp-energy-pool-integration-for-local-and-regional-resilience"><img src="../images/eu_funded_en.jpg" id="EU_logo"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+
+            </div>
+        </div>
+    </div>
+    <script>
+function myFunction() {
+  var x = document.getElementById("navbarNav");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+
+
+
 </body>
+
 </html>

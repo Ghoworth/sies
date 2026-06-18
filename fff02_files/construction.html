@@ -2,8 +2,8 @@
 <html>
 
 <head>
-    <title>Smart Integrated Energy System</title>
-    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <title>Smart Integarted Energy System</title>
+    <link rel="icon" type="image/x-icon" href="..../../images/favicon.ico">
     <!--Add Your Scripts -->
 
     <!--Bootstrap Css / Javascript  -->
@@ -11,30 +11,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../stylesheet/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
 </head>
 
 <body>
-<!-- Cookie Consent by TermsFeed https://www.TermsFeed.com -->
-<script type="text/javascript" src="https://www.termsfeed.com/public/cookie-consent/4.1.0/cookie-consent.js" charset="UTF-8"></script>
-<script type="text/javascript" charset="UTF-8">
-document.addEventListener('DOMContentLoaded', function () {
-cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palette":"dark","language":"en","page_load_consent_levels":["strictly-necessary"],"notice_banner_reject_button_hide":false,"preferences_center_close_button_hide":false,"page_refresh_confirmation_buttons":false,"website_privacy_policy_url":"https://sies-project.com/privacy.html","website_name":"www.sies-project.com"});
-});
-</script>
-
-<noscript>Free cookie consent management tool by <a href="https://www.termsfeed.com/">TermsFeed</a></noscript>
-<!-- End Cookie Consent by TermsFeed https://www.TermsFeed.com -->
-
-
-
-
-
-<!-- Below is the link that users can use to open Preferences Center to change their preferences. Do not modify the ID parameter. Place it where appropriate, style it as needed. -->
-
-<a href="#" id="open_preferences_center">Update cookies preferences</a>
-
-
-
     <header>
 
         <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
@@ -60,7 +41,7 @@ cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palet
                                     About
                                 </a>
                                 <ul class="dropdown-menu align_left">
-                                    <li><a class="dropdown-item" href="usecase_land.html">Use-Cases</a></li>
+                                    <li><a class="dropdown-item" href="../usecase_land.html">Use-Cases</a></li>
                                     <li><a class="dropdown-item" href="#">Work Packages</a></li>
                                     <li><a class="dropdown-item" href="../partners.html">Partners</a></li>
                                     <li><a class="dropdown-item" href="../Supporters.html">Supporting Partners</a></li>
@@ -111,7 +92,7 @@ cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palet
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
                                     <!--Add Images by Src " "-->
-                                    <img src="../images\bjorn-snelders-Cd3Ek7rNXSk-unsplash.jpg"
+                                    <img src="../images/bjorn-snelders-Cd3Ek7rNXSk-unsplash.jpg"
                                         class="d-block w-100" alt="...">
                                 </div>
                                 <div class="carousel-item">
@@ -147,26 +128,13 @@ cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palet
 
                 <div id="body">
                     <div class="body_container">
-                        <br>
-                        <h1>Existing VPP Providers </h1>
-                        <br><br>
-
-                        <br>
-
-                            <p> A review of potential VPP providers was carried out in 2021.  The various providers are summarised in the embedded spreadsheet shown below.
-                                Links have been provided to facilitate access to these providers for further information if required.
-                                <br><br> The spreadsheet might take a few seconds to appear!!<br><br>
-
-                            </p>
-
-
-                            <div>
-                                <iframe width="1200" height="900" frameborder="0" scrolling="no" src="https://1drv.ms/x/c/c77d533f270ca78f/UQOPpwwnP1N9IIDHviEAAAAAAIRwk3NOcpFpcMM?wdAllowInteractivity=False&ActiveCell='Sheet1'!A1&Item='Sheet1'!A1%3AL23&wdHideGridlines=True&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True"></iframe>
-                            </div>
-
-
-
-
+                        <div class="middle">
+                            <br> <br> <br> <br> <br> <br>
+                            <h1>Excuse our mess whilst we construct our website.<br><br>
+                                COMING SOON in<br>
+                                <hr>
+                                <p id="demo" style="font-size:30px"></p> <br> <br> <br>
+                        </div>
 
                     </div>
                 </div>
@@ -208,6 +176,40 @@ cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palet
             </div>
         </div>
     </div>
+
+
+    <script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("Sept 27, 2023 15:00:00").getTime();
+    // Update the count down every 1 second
+    var countdownfunction = setInterval(function() {
+
+    // Get todays date and time
+    var now = new Date().getTime();
+
+    // Find the distance between now an the count down date
+    var distance = countDownDate - now;
+
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    // Output the result in an element with id="demo"
+    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+
+    // If the count down is over, write some text
+    if (distance < 0) {
+    clearInterval(countdownfunction);
+    document.getElementById("demo").innerHTML = "EXPIRED Its taken longer than we thought";
+    }
+    }, 1000);
+    </script>
+
+
+
     <script>
 function myFunction() {
   var x = document.getElementById("navbarNav");
@@ -218,7 +220,6 @@ function myFunction() {
   }
 }
 </script>
-
 
 
 </body>
