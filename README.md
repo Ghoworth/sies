@@ -1,2 +1,3 @@
 # sies
-Original website of SIES 2020 Project now hosted here.  Website details and provides learning lessons for a real pilot VPP project developed in Scotland UK
+Original website of SIES 2020 Project now hosted here.  Website details and provides learning lessons for a real pilot VPP project developed in Scotland UK.  
+SIES 2022 ERA-Learn wass a learning by doing project, that was developed to support transition to a decentralised multi-sector and multi-energy vector, low CO2 Smart Integrated Energy System (SIES) by development of a Digital Energy Utility Management Service (DEUMS). DEUMS was developed to  provide solutions and establish routes-to-market for need-owners and businesses. An existing digital Virtual Power Plant (VPP) platform has been adapted into an Enhanced Virtual Power Plant (VPP+) development, demonstration, and test centre (SIES2022 Centre) capable of managing the interface between local and regional energy systems and markets
