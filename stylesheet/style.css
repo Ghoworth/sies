@@ -1,0 +1,237 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    height: 101%;
+    font-family: 'Montserrat', sans-serif;
+}
+html{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0px auto 0px auto;
+    padding: 0;
+    background-color: #fcfcfc;
+}
+/*-----------------------------------------
+Wrap   --- # means ID . Means Class---
+----------------------------------------- */
+#wrap_outer{ 
+    border: 0.1px solid #fff;
+    margin: 0px auto 0px auto;
+    padding: 0px 2px 2px 2px;
+    width: 1200px;
+    
+}
+#wrap_inner{ 
+    border: 1px solid #fff;
+    margin: 0px 10px 10px 10px;
+    padding: -5px 5px 5px 5px;
+    
+}
+#wrap{ 
+    border: 0.5px solid #e1e5eb;
+    margin: 0px 10px 10px 10px;
+    padding: -5px 5px 5px 5px;
+    
+}
+/*---------------------------------
+Layout for Main Pages
+-------------------------------- */
+footer{
+    margin: 2px 0px 2px 0px;
+    background-color: #fff;
+}
+header{
+    padding: 0px;
+}
+.navbar.fixed-top.navbar-expand-lg.navbar-light.bg-light{
+    background-color: #D4D9DC;
+    margin: 0px 0px 2px 0px;
+      padding: 0px 5px 0px 5px;
+        border: 1px solid #e1e5eb;
+}
+a.nav-link{
+    color: black !important;
+}
+a.nav-link:hover{
+     background-color: #0078ae;
+       border: #f1efef 0.5px solid;
+       color: #fff;
+}
+#afterthought{
+    margin: 2px 0px 2px 0px;
+    background-color: #fff;
+}
+#body{
+    background-color: #fff;
+}
+#display{
+    margin: 2px 0px 2px 0px;
+    padding: 0px 5px 0px 5px;
+    background-color: #dddfe4;
+}
+img{
+    height: 300px;
+}
+/*-----------------------------------------
+Font Sizes
+----------------------------------------- */
+h1{
+    color: #000;
+    font-size: 2rem;
+}
+h2{
+    color: #000;
+    font-size: 1.8rem;
+}
+h3{
+    color: #000;
+    font-size: 1.6rem;
+}
+h4{
+    color: #000;
+    font-size: 1.4rem;
+}
+h5{
+    color: #000;
+    font-size: 1.2rem;
+}
+h6{
+    color: #000;
+    font-size: 1rem;
+}
+p{
+    color: #000;
+    font-size: 1rem;
+}
+/*-----------------------------------------
+Align Divs
+----------------------------------------- */
+.align_center{
+    text-align: center;
+}
+.align_left{
+    text-align: left;
+}
+.align_right{
+    text-align: right;
+}
+/*-----------------------------------------
+Grids
+----------------------------------------- */
+.grid_1{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2px;
+}
+.grid_2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+}
+.grid_3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5px;
+}
+.grid_4{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 5px;
+}
+.grid_5{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 5px;
+}
+.grid_6{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 5px;
+}
+
+/*-----------------------------------------
+Content Blocks 
+----------------------------------------- */
+.Content_block{
+    margin: 5px 0px 5px 0px;
+    padding: 0px;
+}
+.content_block_inner{
+    margin: 0px;
+    padding: 5px 5px 5px 5px;
+    
+}
+.body_container{
+    margin: 5px 0px 10px 0px;
+    padding: 0px 5px 0px 5px;
+    background-color: #fff;
+}
+.body_container2{
+    margin: 0px;
+    padding: 0px;
+    background-color: #fff;
+}
+#map_image{
+    height: 500px !important;
+    width: 1049px !important;
+}
+/*-----------------------------------------
+
+----------------------------------------- */
+.spacer{
+    margin: 2px 0px 2px 0px;
+    border-top: #fff 2px solid;
+    border-bottom: #7c88b1 0.5px solid;
+}
+/*-----------------------------------------
+Button Styling
+----------------------------------------- */
+.button_box{
+    margin: 2px 0px 3px 0px;
+    padding: 0px;
+    border: 1px solid #e1e5eb; 
+    text-align: center;
+}
+.button_box_inner{
+    margin: 0px;
+    padding: 5px 5px 5px 5px;
+    
+}
+.btn.btn-primary{
+    background-color: #fff;
+    border: #f1efef 0.5px solid;
+    color: #0078ae;
+    width: 100%;
+}
+.btn.btn-primary:hover{
+    background-color: #0078ae;
+    border: #f1efef 0.5px solid;
+    color: #fff;
+}
+/*-----------------------------------------
+Button Styling
+----------------------------------------- */
+.footer{
+    border: 0.5px solid #e1e5eb;
+    margin: 2px 0px 2px 0px;
+}
+.footer_inner{
+    padding: 5px 5px 5px 5px;
+}
+/*-----------------------------------------
+Video View Styling
+----------------------------------------- */
+.video_box{
+    margin: 2px 0px 3px 0px;
+    padding: 0px;
+    border: 1px solid #e1e5eb; 
+    text-align: center;
+}
+.video_box_inner{
+    margin: 0px;
+    padding: 5px 5px 5px 5px;
+}
