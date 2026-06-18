@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/html">
+<html>
 
 <head>
     <title>Smart Integrated Energy System</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-    <!--base href="file:///E:/sies/New%20Site2/seis%20Web/"-->
     <!--Add Your Scripts -->
 
     <!--Bootstrap Css / Javascript  -->
@@ -14,7 +13,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 
-<body>
 <body>
 <!-- Cookie Consent by TermsFeed https://www.TermsFeed.com -->
 <script type="text/javascript" src="https://www.termsfeed.com/public/cookie-consent/4.1.0/cookie-consent.js" charset="UTF-8"></script>
@@ -26,7 +24,6 @@ cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palet
 
 <noscript>Free cookie consent management tool by <a href="https://www.termsfeed.com/">TermsFeed</a></noscript>
 <!-- End Cookie Consent by TermsFeed https://www.TermsFeed.com -->
-
     <header>
 
         <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
@@ -80,6 +77,7 @@ cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palet
                 </div>
             </div>
         </nav>
+
     </header>
 
     <div id="wrap_outer">
@@ -138,87 +136,111 @@ cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palet
 
                 <div id="body">
                     <div class="body_container">
-                        <h1>Project Videos </h1>
+                        <h1>Use Case 6: FindHorn Solar PV & HeatPump </h1>
                         <br><br>
-                        <div class="Content_block">
-                            <div class="content_block_inner">
+                        <h4><strong>Case Overview</strong> </h4>
+                        <p>
+                            The  Findhorn Ecovillage (in Moray, Scotland, near the village of Findhorn) is a synthesis of some of the very best of current thinking on sustainable human settlements.
+                            It is a constantly evolving model used as learning environment by a number of university and school groups as well as by professional organisations and municipalities worldwide.
+                            Numerous homes and community buildings incorporate solar panels for hot water heating and supply of electricity to Heat pumps. A community company supplies panels to residential and commercial customers throughout the UK, both for new buildings and to retrofit existing buildings. Most new community buildings incorporate design features that invite passive solar radiation to reduce building heating needs, such as south-facing windows and conservatories and minimal wall openings on north walls. Sustainably harvested wood provides space heating for both new and older homes.
+                            <br><br>
+                            Four community-owned wind turbines, which have a total capacity of 750kW, supply more than 100% of the community's electricity needs. The system is unusual in that the community owns its own
+                            private electricity grid.The electricity produced by the turbines is sent to a substation that meters the flows, alters the transmission voltages and acts as a switching station.
+                            Normally output is used on-site, but If production exceeds demand the surplus is exported to the grid and generates reveues.
+                            If there is no  wind output the site imports from the grid. Overall Findhorn are net exporters of electricity.
+                            <br><br>In this case study only the use of PV solar with a heat pump and thermal store is shown.  PV output is used to heat the tank.  Excess PV is exported, with imports used to heat the tank where necessary.
+                            <br><br>
+                            Real data (based on July 3-16 2023 ) is shown for the PV output, the HP output, tank top node temperature. In addition cumulative PV contribution to HP use is shown.
 
-                                <div class="grid_2">
 
-                                    <div class="video_box">
-                                        <div class="video_box_inner">
-                                            <h2> VPP's: The Current State of the Art 1</h2>
-                                            <iframe width="500" height="315"
-                                                src="https://www.youtube.com/embed/7IbZF5ZOpZ4"
-                                                title="YouTube video player" frameborder="0"
-                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                                allowfullscreen></iframe>
-                                        </div>
-                                        <div class="video_box_inner">
-                                            <h2> VPP's: The Current State of the Art 2</h2>
-                                            <iframe width="500" height="315"
-                                                    src="https://www.youtube.com/embed/uOhM7hj4zKs"
-                                                    title="YouTube video player" frameborder="0"
-                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                                    allowfullscreen></iframe>
-                                        </div>
-                                    </div>
-                                    <div class="video_box">
-                                        <div class="video_box_inner">
-                                            <h2> Introduction to SIES</h2>
-                                            <video width="500" height="315" controls>
-                                                <source src="images/TestCIREDPaperEV.mp4" type="video/mp4">
-                                            </video>
-                                        </div>
-                                    </div>
-                                    <div class="video_box">
-                                        <div class="video_box_inner">
-                                            <h2> How does the SIES VPP Work?</h2>
-                                            <video width="500" height="315" controls>
-                                                <source src="images/SIES software design vpp animation.mp4" type="video/mp4">
-                                            </video>
-                                        </div>
-                                    </div>
+                        </p>
+                        <h5><strong>Assets</strong></h5>
+                        </p>
+                        <ul class="a" style="list-style-type; circle; color: #000;">
 
+                            <li> 8 kW Solar PV</li>
+                            <li>Various Control schemesl</li>
+                            <li>Heat Load</li>
+                            <li>Heat Pump  14 kW heat output COP ~2 </li>
+
+                        </ul>
+                        <p>
+                        <h5><strong>Market</strong></h5>
+                        <p>
+                            Usecase 2 assumes that the wind turbine sells to it power on fixed contract (for both imports and exports of power).
+                        </p>
+                        <h5><strong>Control and Data Capture</strong></h5>
+                        <p>
+                            3 control cases are shown in Figure 3.
+                        <ul class="a" style="list-style-type; circle; color: #000;">
+
+                        <li>  MPC control  essentially uses a regression model with weather forecasts to predict PV output for 24 hours, and a regression model for tank temperatures and
+                        predicted demand to assess when 47C will be reached. The tank will charge and store when the next timestep has the highest predicted PV output before the timestep when 47C is predicted and the
+                            temperature is below 50C.</li>
+                        <li> No control -  automatically recharges at a top tank temperature of 47C.</li>
+                            <li> Simple control recharges if temp is below 50C and PV above 5kW, or 47C if that comes first. The 5kW has worked over summer but that would be more flexible over winter based on some logic.</li>
+
+                    </ul>
+                        Note there are no  power prices are used in any of these control schemes. They are just trying to maximise PV contribution to the Heat Pump. which has a significant benefit. Findhorn has fixed and day/night
+                        tariffs.
+                        </p>
+
+
+
+                        <h5><strong>Animation</strong></h5>
+                        <p>
+                            The video below conceptualises the current setup in block form and shows a simulation/animation of the assets described above.  Arrow sizes represent flows associated with use case.
+                        </p>
+
+                        <div class="ui container">
+                            <div class="">
+                                <figure>
+                                    <img id="map_image6" alt="H2 Animatiom" src="images/Animation_usecase6c.gif"/>
+                                    <figcaption><em>Figure 1. Use Case 6 FindHorn Animation FLows MPC .</em></figcaption>
+                                </figure>
+                            </div>
+                            <br>
+                            <div class="">
+                                <div class="">
+                                    <figure>
+                                        <img id="map_image6c" alt="H2 Animatiom" src="images/Animation_usecase6c2.gif"/>
+                                        <figcaption><em>Figure 2. Use Case 6 FindHorn MPC Graphs .</em></figcaption>
+                                    </figure>
                                 </div>
+                                <br>
+                                <h5><strong>Notes</strong></h5>
+                                <p>
+                                <ul class="a" style="list-style-type; circle; color: #000;">
+                                    <li> Net Revenues = Export to grid - Import from Grid Revenues. Not used in Control Scheme</li>
+                                    <li> Simulation over two weeks; Half Hour by Half Hour.  Sim start from HH - 96</li>
+                                    <li> Graphs show rolling window.  Note the right hand side of the graph shows the latest output. Those to the left of that point represent the historical points</li>
+                                    <li> Note zero flow lines still shown</li>
+
+
+                                </ul>
+                                </p>
+
+                                <h5><strong>Other Cases</strong></h5>
+                                <p>
+                                The animation above uses MPC control (lookahead using weather forecats) to the use of PV output to the heatpump
+                                Two other control cases are shown for comparison (see Figure 3).
+                                <ul class="a" style="list-style-type; circle; color: #000;">
+                                    <li> No control - </li>
+                                    <li> Simple Control</li>
+                                    <li> MPC Control</li>
+                                </ul>
+                                </p>
+                                <div class="">
+                                    <div class="">
+                                        <figure>
+                                            <img id="map_image4" alt="comparison FH" src="images/comparisonFH.png"/>
+                                            <figcaption><em>Figure 3. FindHorn Compariosn of Control Schemes .</em></figcaption>
+                                        </figure>
+                                    </div>
+                                    <br>
+
 
                             </div>
-                        </div>
-
-                        <div class="Content_block">
-                            <div class="content_block_inner">
-
-                                <!--   vids extra
-                                <div class="grid_2">
-
-                                    <div class="video_box">
-                                        <h2> Video 3</h2>
-                                        <div class="video_box_inner">
-                                            <iframe width="500" height="315"
-                                                    src="https://www.youtube.com/embed/aznOL753eiQ"
-                                                    title="YouTube video player" frameborder="0"
-                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                                    allowfullscreen></iframe>
-                                        </div>
-                                    </div>
-                                    <div class="video_box">
-                                        <div class="video_box_inner">
-                                            <h2> Video 4</h2>
-                                            <iframe width="500" height="315"
-                                                src="https://www.youtube.com/embed/yqqaW8DCc-I"
-                                                title="YouTube video player" frameborder="0"
-                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                                allowfullscreen></iframe>
-                                        </div>
-                                    </div>
-
-                                </div>    -->
-
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
 
                 <div class="spacer"></div>
                 <!--Repeat Every Page -->
@@ -269,7 +291,30 @@ function myFunction() {
 }
 </script>
 
+                    </script>
 
+                    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+                    <script>
+            // Get the button
+            let mybutton = document.getElementById("myBtn");
+
+            // When the user scrolls down 300px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 300) {
+                mybutton.style.display = "block";
+              } else {
+                mybutton.style.display = "none";
+              }
+            }
+
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+</script>
 
 </body>
 

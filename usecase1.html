@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/html">
+<html>
 
 <head>
     <title>Smart Integrated Energy System</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-    <!--base href="file:///E:/sies/New%20Site2/seis%20Web/"-->
     <!--Add Your Scripts -->
 
     <!--Bootstrap Css / Javascript  -->
@@ -14,7 +13,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 
-<body>
 <body>
 <!-- Cookie Consent by TermsFeed https://www.TermsFeed.com -->
 <script type="text/javascript" src="https://www.termsfeed.com/public/cookie-consent/4.1.0/cookie-consent.js" charset="UTF-8"></script>
@@ -26,7 +24,6 @@ cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palet
 
 <noscript>Free cookie consent management tool by <a href="https://www.termsfeed.com/">TermsFeed</a></noscript>
 <!-- End Cookie Consent by TermsFeed https://www.TermsFeed.com -->
-
     <header>
 
         <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
@@ -138,82 +135,69 @@ cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palet
 
                 <div id="body">
                     <div class="body_container">
-                        <h1>Project Videos </h1>
+                        <h1>Use Case 1: Myres Hill Wind Turbine Only Exporting to Grid </h1>
                         <br><br>
                         <div class="Content_block">
                             <div class="content_block_inner">
+                                <br>
+                                <h4><strong>Case Overview</strong> </h4>
+                                <p>
+                                    A small 225 kW Vestas V27 wind turbine  + 2 x 0.9 MW turbines  situated at Myres Hill near East Kilbride Scotland UK.  The turbines are connected to an 11 KV grid connection and feeds
+                                    the Castle Grid Supply point at 33kV/275kV.  A small load is also connected near the Myres Hill, but is not used in this scenario.  The turbine can be controlled using a simple on off API built for the project.  This scenario was used to prove the ability of the VPP platform to read
+                                    in data and send control signals to a turbine. Only the smaller turbine is controlled.
 
-                                <div class="grid_2">
+                                </p>
+                                <h5><strong>Assets</strong></h5>
+                                </p>
+                                <ul class="a" style="list-style-type; circle; color: #000;">
+                                    <li>1x 225 kW Vestas V27 Wind Turbine +  2X NEG Micon NM52 turbines each generating 0.9 megawatts (MW). </li>
+                                    <li>Load Nearby ~ 60 kW. </li>
+                                </ul>
+                                <p>
+                                <h5><strong>Market</strong></h5>
+                                <p>
+                                    The wind turbine sells its output on a fixed PPA.
 
-                                    <div class="video_box">
-                                        <div class="video_box_inner">
-                                            <h2> VPP's: The Current State of the Art 1</h2>
-                                            <iframe width="500" height="315"
-                                                src="https://www.youtube.com/embed/7IbZF5ZOpZ4"
-                                                title="YouTube video player" frameborder="0"
-                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                                allowfullscreen></iframe>
-                                        </div>
-                                        <div class="video_box_inner">
-                                            <h2> VPP's: The Current State of the Art 2</h2>
-                                            <iframe width="500" height="315"
-                                                    src="https://www.youtube.com/embed/uOhM7hj4zKs"
-                                                    title="YouTube video player" frameborder="0"
-                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                                    allowfullscreen></iframe>
-                                        </div>
+                                </p>
+                                <h5><strong>Control and Data Capture</strong></h5>
+                                <p>
+                                    Use case 1 captures data from the wind turbine eg windspeed, Power output and market data from octopus agile outgoing.  The VPP is able to switch the wind turbine on and off using an
+                                API created for the project.
+                                <h5><strong>Animation</strong></h5>
+                                <p>
+                                    The video below conceptualises the current setup in block form and shows a simulation/animation of the assets described above. Arrow sizes represent flows
+                                    associated with use case.
+                                    Power flows are rounded to the nearest integer. Note this is an hypothetical example for demonstration -  Animation under construction.
+                                </p>
+                                <p>
+                                </p>
+                                <div class="ui container">
+                                    <div class="">
+                                        <figure>
+                                            <img id="map_image6" alt="MH wind only animation" src="images/Animation_usecase1.gif"/>
+                                            <figcaption><em>Figure 1. Use Case 1 Myres Hill Wind Turbine Only .</em></figcaption>
+                                        </figure>
                                     </div>
-                                    <div class="video_box">
-                                        <div class="video_box_inner">
-                                            <h2> Introduction to SIES</h2>
-                                            <video width="500" height="315" controls>
-                                                <source src="images/TestCIREDPaperEV.mp4" type="video/mp4">
-                                            </video>
+                                    <br>
+                                    <div class="ui container">
+                                        <div class="">
+                                            <figure>
+                                                <img id="map_image6b" alt="MH wind graph wind out " src="images/mh wind out week.png"/>
+                                                <figcaption><em>Figure 2. Use Case 2 Myres Hill Wind Output 1 week  .</em></figcaption>
+                                            </figure>
                                         </div>
-                                    </div>
-                                    <div class="video_box">
-                                        <div class="video_box_inner">
-                                            <h2> How does the SIES VPP Work?</h2>
-                                            <video width="500" height="315" controls>
-                                                <source src="images/SIES software design vpp animation.mp4" type="video/mp4">
-                                            </video>
-                                        </div>
-                                    </div>
 
-                                </div>
+                                        <h5><strong>Notes</strong></h5>
+                                        <p>
+                                        <ul class="a" style="list-style-type; circle; color: #000;">
+                                            <li> Simulation over one week; Half Hour by Half Hour.  Sim start from HH - 1</li>
+                                            <li> Figure 1 shows rolling window.  Note the right hand side of the graph shows the latest output. Those to the left of that point represent the historical points</li>
+                                            <li> Note zero flow lines on Animation still shown</li>
+                                            <li> Figure 2 shows the wind output at Myres Hill for one week.</li>
 
-                            </div>
-                        </div>
 
-                        <div class="Content_block">
-                            <div class="content_block_inner">
-
-                                <!--   vids extra
-                                <div class="grid_2">
-
-                                    <div class="video_box">
-                                        <h2> Video 3</h2>
-                                        <div class="video_box_inner">
-                                            <iframe width="500" height="315"
-                                                    src="https://www.youtube.com/embed/aznOL753eiQ"
-                                                    title="YouTube video player" frameborder="0"
-                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                                    allowfullscreen></iframe>
-                                        </div>
-                                    </div>
-                                    <div class="video_box">
-                                        <div class="video_box_inner">
-                                            <h2> Video 4</h2>
-                                            <iframe width="500" height="315"
-                                                src="https://www.youtube.com/embed/yqqaW8DCc-I"
-                                                title="YouTube video player" frameborder="0"
-                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                                allowfullscreen></iframe>
-                                        </div>
-                                    </div>
-
-                                </div>    -->
-
+                                        </ul>
+                                        </p>
                             </div>
                         </div>
 
@@ -269,6 +253,30 @@ function myFunction() {
 }
 </script>
 
+            </script>
+
+            <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+            <script>
+            // Get the button
+            let mybutton = document.getElementById("myBtn");
+
+            // When the user scrolls down 300px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 300) {
+                mybutton.style.display = "block";
+              } else {
+                mybutton.style.display = "none";
+              }
+            }
+
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+</script>
 
 
 </body>

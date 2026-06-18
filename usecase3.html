@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/html">
+<html>
 
 <head>
     <title>Smart Integrated Energy System</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-    <!--base href="file:///E:/sies/New%20Site2/seis%20Web/"-->
     <!--Add Your Scripts -->
 
     <!--Bootstrap Css / Javascript  -->
@@ -14,7 +13,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 
-<body>
 <body>
 <!-- Cookie Consent by TermsFeed https://www.TermsFeed.com -->
 <script type="text/javascript" src="https://www.termsfeed.com/public/cookie-consent/4.1.0/cookie-consent.js" charset="UTF-8"></script>
@@ -26,7 +24,6 @@ cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palet
 
 <noscript>Free cookie consent management tool by <a href="https://www.termsfeed.com/">TermsFeed</a></noscript>
 <!-- End Cookie Consent by TermsFeed https://www.TermsFeed.com -->
-
     <header>
 
         <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
@@ -138,81 +135,113 @@ cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palet
 
                 <div id="body">
                     <div class="body_container">
-                        <h1>Project Videos </h1>
+                        <h1>Use Case 3: ETC Site With Battery </h1>
                         <br><br>
                         <div class="Content_block">
                             <div class="content_block_inner">
+                                <br>
+                                <h4><strong>Case Overview</strong> </h4>
+                                <p>
+                                    The Engineering Technology Centre (ETC) based at East Kilbride in Scotland is providing the project a demonstrator site with a variety of assets including PV, Wind, a battery and Load.
+                                    Imports occur at fixed prices but in this use case study, Octopus Agile Prices  (Dynamic Tariffs) are used.
 
-                                <div class="grid_2">
+                                </p>
+                                <h5><strong>Assets</strong></h5>
+                                </p>
+                                <ul class="a" style="list-style-type; circle; color: #000;">
+                                    <li>10 kW Wind Turbine</li>
+                                    <li> 12 kW Solar PV</li>
+                                    <li>100 kW 178 kWh Battery -> Min SOC - 36 kWh</li>
+                                    <li>MPC Control</li>
+                                    <li>Load 10-60 kW</li>
+                                </ul>
+                                <p>
+                                <h5><strong>Market</strong></h5>
+                                <p>
+                                    Usecase 3 assumes that ETC sells to it flexibility/power on an octopus agile tariff.
+                                    <a href="https://octopus.energy/agile/">Click here for more details on the tariff.</a>
+                                </p>
+                                <h5><strong>Control and Data Capture</strong></h5>
+                                <p>
+                                    Usecase 3 assumes the use of Model Predictive Control (MPC).  A look ahead function uses future prices and determines whether or not to export wind/PV output or store into a battery.
+                                    At the appropriate times the battery is dischared to maximise revenues to the site.
 
-                                    <div class="video_box">
-                                        <div class="video_box_inner">
-                                            <h2> VPP's: The Current State of the Art 1</h2>
-                                            <iframe width="500" height="315"
-                                                src="https://www.youtube.com/embed/7IbZF5ZOpZ4"
-                                                title="YouTube video player" frameborder="0"
-                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                                allowfullscreen></iframe>
-                                        </div>
-                                        <div class="video_box_inner">
-                                            <h2> VPP's: The Current State of the Art 2</h2>
-                                            <iframe width="500" height="315"
-                                                    src="https://www.youtube.com/embed/uOhM7hj4zKs"
-                                                    title="YouTube video player" frameborder="0"
-                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                                    allowfullscreen></iframe>
-                                        </div>
+
+                                <h5><strong>Animation</strong></h5>
+                                <p>
+                                    The video below conceptualises the current setup in block form and shows a simulation/animation of the assets described above.  Arrow sizes represent flows associated with use case.
+
+                                </p>
+                                Two cases are shown below.
+                                <ul class="a" style="list-style-type; circle; color: #000;">
+                                    <li>  ETC with its current assets (Figures 1 & 2) </li>
+                                    <li> ETC with 10 times the renewables (same assets Renewables - scaled - see Figures 3 & 4). Battery size and Load remains the same.</li>
+
+                                </ul>
+                                <p>
+
+                                </p>
+                                <br>
+                                <h5><strong><u>1. ETC Renewables - Base Case </u></strong></h5>
+                                <div class="ui container">
+                                    <div class="">
+                                        <figure>
+                                            <img id="map_image6_2" alt="ETC Animatiom" src="images/Animation_usecase3a1.gif"/>
+                                            <figcaption><em>Figure 1. Use Case 3 ETC Animation FLows .</em></figcaption>
+                                        </figure>
                                     </div>
-                                    <div class="video_box">
-                                        <div class="video_box_inner">
-                                            <h2> Introduction to SIES</h2>
-                                            <video width="500" height="315" controls>
-                                                <source src="images/TestCIREDPaperEV.mp4" type="video/mp4">
-                                            </video>
+                                    <br>
+                                    <div class="">
+                                        <div class="">
+                                            <figure>
+                                                <img id="map_image6_2c" alt="ETC Animatiom" src="images/Animation_usecase3a2.gif"/>
+                                                <figcaption><em>Figure 2. Use Case 3 ETC Graphs .</em></figcaption>
+                                            </figure>
                                         </div>
-                                    </div>
-                                    <div class="video_box">
-                                        <div class="video_box_inner">
-                                            <h2> How does the SIES VPP Work?</h2>
-                                            <video width="500" height="315" controls>
-                                                <source src="images/SIES software design vpp animation.mp4" type="video/mp4">
-                                            </video>
-                                        </div>
-                                    </div>
+                                        <br>
 
-                                </div>
 
-                            </div>
-                        </div>
+                                        <h5><strong><u>2. ETC Renewables x 10 </u> </strong></h5>
+                                        <div class="ui container">
+                                            <div class="">
+                                                <figure>
+                                                    <img id="map_image6" alt="ETC x 10 flows" src="images/Animation_usecase3b1.gif"/>
+                                                    <figcaption><em>Figure 3. Use Case 3 ETC Renewables X 10 with Battery Animation FLows .</em></figcaption>
+                                                </figure>
+                                            </div>
+                                            <br>
+                                            <div class="">
+                                                <div class="">
+                                                    <figure>
+                                                        <img id="map_image6c" alt="ETC x 10 flows graphs Animatiom" src="images/Animation_usecase3b2.gif"/>
+                                                        <figcaption><em>Figure 4. Use Case 3 Use Case 3 ETC Renewables X 10 with Battery Graphs .</em></figcaption>
+                                                    </figure>
+                                                </div>
+                                                <br>
 
-                        <div class="Content_block">
-                            <div class="content_block_inner">
+                                                <h5><strong>Notes</strong></h5>
+                                                <p>
+                                                <ul class="a" style="list-style-type; circle; color: #000;">
+                                                    <li> Net Revenues = Export to grid Revenues - Import from Grid Revenues</li>
+                                                    <li> Simulation over one week; Half Hour by Half Hour.  Sim start from HH -96</li>
+                                                    <li> Graphs show rolling window.  Note the right hand side of the graph shows the latest output. Those to the left of that point represent the historical points</li>
+                                                    <li> Note zero flow lines still shown</li>
+                                                </ul>
+                                                </p>
+                                                <h5><strong>Commentary</strong></h5>
+                                                <p>
+                                                In the base case renewables are always sent to the Load first and is supplemented with battery output occasionally.  Exports are minimal. Net Revenues (Exports - Imports) are -&pound515
+                                                    over a week with the battery and -&pound632 without it.  Scaling to a year, the battery with VPP control could therfore provide an additional potential revenue of around &pound6,100/year.  The average battery SOC
+                                                    over the week is around 40%.  Note revenues etc will be dependent upon price assumptions. Most of this net benefit arisies in the first 84 hours (~half a week) when
+                                                    import prices are not affected by the Octopus price cap. Without a price cap potential net benefits could be around &pound10,000 per year with this set up.
+                                                 In the case where there is 10  times the renewables with the same load more interesting behaviour occurs.  Battery exports occur to supplement
+                                                    revenues and exports of the renewables occurs as the load is to small to accomadate all of its output.  Note that the octopus import prices are some times negative,
+                                                    so one would expect that the algorithm would charge the battery at all times. This does not occur at all times, as the MPC algorithm uses a lookahead algorithm
+                                                    and decides on the best time to charge the battery to maximise revenues.  Note that when prices are high the battery is discharged.  The octopus prices are based on those seen in 2022 when peak prices
+                                                    were capped at &pound;350/MWh.
 
-                                <!--   vids extra
-                                <div class="grid_2">
+                                                </p>
 
-                                    <div class="video_box">
-                                        <h2> Video 3</h2>
-                                        <div class="video_box_inner">
-                                            <iframe width="500" height="315"
-                                                    src="https://www.youtube.com/embed/aznOL753eiQ"
-                                                    title="YouTube video player" frameborder="0"
-                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                                    allowfullscreen></iframe>
-                                        </div>
-                                    </div>
-                                    <div class="video_box">
-                                        <div class="video_box_inner">
-                                            <h2> Video 4</h2>
-                                            <iframe width="500" height="315"
-                                                src="https://www.youtube.com/embed/yqqaW8DCc-I"
-                                                title="YouTube video player" frameborder="0"
-                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                                allowfullscreen></iframe>
-                                        </div>
-                                    </div>
-
-                                </div>    -->
 
                             </div>
                         </div>
@@ -269,6 +298,32 @@ function myFunction() {
 }
 </script>
 
+                    </script>
+
+                    </script>
+
+                    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+                    <script>
+            // Get the button
+            let mybutton = document.getElementById("myBtn");
+
+            // When the user scrolls down 300px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 300) {
+                mybutton.style.display = "block";
+              } else {
+                mybutton.style.display = "none";
+              }
+            }
+
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+</script>
 
 
 </body>

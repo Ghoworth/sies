@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/html">
+<html>
 
 <head>
     <title>Smart Integrated Energy System</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-    <!--base href="file:///E:/sies/New%20Site2/seis%20Web/"-->
     <!--Add Your Scripts -->
 
     <!--Bootstrap Css / Javascript  -->
@@ -14,7 +13,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 
-<body>
 <body>
 <!-- Cookie Consent by TermsFeed https://www.TermsFeed.com -->
 <script type="text/javascript" src="https://www.termsfeed.com/public/cookie-consent/4.1.0/cookie-consent.js" charset="UTF-8"></script>
@@ -26,6 +24,16 @@ cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palet
 
 <noscript>Free cookie consent management tool by <a href="https://www.termsfeed.com/">TermsFeed</a></noscript>
 <!-- End Cookie Consent by TermsFeed https://www.TermsFeed.com -->
+
+
+
+
+
+<!-- Below is the link that users can use to open Preferences Center to change their preferences. Do not modify the ID parameter. Place it where appropriate, style it as needed. -->
+
+<a href="#" id="open_preferences_center">Update cookies preferences</a>
+
+
 
     <header>
 
@@ -80,6 +88,7 @@ cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palet
                 </div>
             </div>
         </nav>
+
     </header>
 
     <div id="wrap_outer">
@@ -138,84 +147,56 @@ cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palet
 
                 <div id="body">
                     <div class="body_container">
-                        <h1>Project Videos </h1>
+                        <br>
+                        <h1>Asset Choice and Value </h1>
                         <br><br>
-                        <div class="Content_block">
-                            <div class="content_block_inner">
 
-                                <div class="grid_2">
+                        <br>
+                        <h3>Selecting the Appropriate Assets</h3><br><br>
+                            <p> Choosing which assets to incorporate into a VPP system  could be as simple as using the assets currently available to particular owners.  Where assets are to be sourced in the future, the judicious selection of assets will have an impact on financial performance and becomes more of an involved process.  Essentially the VPP developer needs to calculate the benefit to them of operating a VPP. That is do the benefits or revenues outweighh the costs. In particular VPP developers should consider:
 
-                                    <div class="video_box">
-                                        <div class="video_box_inner">
-                                            <h2> VPP's: The Current State of the Art 1</h2>
-                                            <iframe width="500" height="315"
-                                                src="https://www.youtube.com/embed/7IbZF5ZOpZ4"
-                                                title="YouTube video player" frameborder="0"
-                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                                allowfullscreen></iframe>
-                                        </div>
-                                        <div class="video_box_inner">
-                                            <h2> VPP's: The Current State of the Art 2</h2>
-                                            <iframe width="500" height="315"
-                                                    src="https://www.youtube.com/embed/uOhM7hj4zKs"
-                                                    title="YouTube video player" frameborder="0"
-                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                                    allowfullscreen></iframe>
-                                        </div>
-                                    </div>
-                                    <div class="video_box">
-                                        <div class="video_box_inner">
-                                            <h2> Introduction to SIES</h2>
-                                            <video width="500" height="315" controls>
-                                                <source src="images/TestCIREDPaperEV.mp4" type="video/mp4">
-                                            </video>
-                                        </div>
-                                    </div>
-                                    <div class="video_box">
-                                        <div class="video_box_inner">
-                                            <h2> How does the SIES VPP Work?</h2>
-                                            <video width="500" height="315" controls>
-                                                <source src="images/SIES software design vpp animation.mp4" type="video/mp4">
-                                            </video>
-                                        </div>
-                                    </div>
+                        <ul class="a" style="list-style-type; circle; color: #000;">
+                                <li>  Location of assets </li>
+                                <li> Grid conditions around assets location (Need for flexibility and limits on export/imports)</li>
+                                <li>Markets Available (and prices which drives potential revenues)</li>
+                                <li>Asset characteristics e.g. Wind output, variability of the output. </li>
+                            </ul>
 
-                                </div>
+                                Using third party VPP solutions will incur costs, depending on the commercial arrangements.  Additional fees may be required for specific modules (Machine learning, Weather forecasting etc).  Upfront fees for third party software and subsequent &quot;maintenance  or use fees&quot; will determine the minimum level of revenues  (the &quot;break-even revenue&quot;) and assets required.
+                                Similarly for home-grown solutions there will be costs associated with access to markets and for services such as weather forecasts as well as for the development of the system.
 
-                            </div>
-                        </div>
+                                The addition of new assets will result in the addition of new capex and opex, which may or may not be remunerated by the use of VPP.
 
-                        <div class="Content_block">
-                            <div class="content_block_inner">
+                        <br><br>
+                        <h3>Using the Spreadsheet Calculator</h3><br>
+                                <p>
+                                The embedded spreadsheet shown below, can be used to calculate yearly profits, for a set of assets providing X MW at a certain utilisation.  Onshore Wind assets typically have utilisations of around 30% whilst Solar PV only around 10%.  You can download for use offline.  Note some of the yellow cells have formulas in and are driven off some of the other inputs.  You are welcome to overwrite these.
+                                Note No carbon benefits have been shown.
+                                <br><br><strong>Annualized Capital Costs/Charge (ACC)</strong> <br>
+                                Capital costs have been represented as Annualized Capital charges in the yearly profit statements.  They have been calculated using the number of years and an appropriate discount rate.
 
-                                <!--   vids extra
-                                <div class="grid_2">
+                                    <br><br><strong>Flexibility Market Assumptions</strong> <br>
+                                The markets are represented as a simple availability and utilisation charge and based on the current markets for DSO&apos;s/DNO&apos;s  e.g. via Piclo.  DSO&apos;s/DNO&apos;s  would be looking for flexibility for a number of hours during the year at specific locations.
+                                    They would typically pay an availability fee &pound;/MW/h for the hours on standby whether dispatched or not and a utilisation fee for actual energy dispatched or reduced &pound;/MWh.  Users can input this data.  Some typical values have been input as a starting point but this will be location specific. Note the spreadsheet assumes that volumes are put aside for DSO/DNO flex they would not be able to be used in other markets.  Other Specific markets might allow for flexibility to be sold in to multiple markets.
 
-                                    <div class="video_box">
-                                        <h2> Video 3</h2>
-                                        <div class="video_box_inner">
-                                            <iframe width="500" height="315"
-                                                    src="https://www.youtube.com/embed/aznOL753eiQ"
-                                                    title="YouTube video player" frameborder="0"
-                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                                    allowfullscreen></iframe>
-                                        </div>
-                                    </div>
-                                    <div class="video_box">
-                                        <div class="video_box_inner">
-                                            <h2> Video 4</h2>
-                                            <iframe width="500" height="315"
-                                                src="https://www.youtube.com/embed/yqqaW8DCc-I"
-                                                title="YouTube video player" frameborder="0"
-                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                                allowfullscreen></iframe>
-                                        </div>
-                                    </div>
+                                    <br><br><strong>Business Model and Choice</strong> <br>
+                                    Asset choice is but one element or dimension of the overall VPP Business model.  We refer you to the Business model section of the solution library for further information.
 
-                                </div>    -->
+                                    <br><br><strong>Warranty and use of the spreadsheet</strong> <br>
+                                All publications/Presentations/Spreadsheets by SIES Project are based on information and opinions from a variety of sources which have not been subjected to extensive verification. No representation or warranty is given by the SIES Project as to the accuracy or completeness of the information and opinions contained in such publications or to the validity of spreadsheets etc provided as scoping tools.  Users will need to perform their own due diligence and valuations before making investments. The SIES Project do not accept any responsibility for the accuracy or sufficiency of any of the information or opinions or for any direct, indirect or consequential loss or damage suffered by any person as a result of relying on such publications/spreadsheets/tools or on the information and opinions therein. The user of this work/spreadsheets shall indemnify SIES Project arising from such disclosure, reproduction or copying.
+
+                                <br><br> The spreadsheet might take a few seconds to appear!!<br><br>
+
+                            </p>
+
+                            <div>
+                                <iframe width="900" height="787" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=C77D533F270CA78F%217590&authkey=%21AEk1-U28jSz7zA0&em=2&wdAllowInteractivity=False&AllowTyping=True&ActiveCell='Sheet1'!H5&Item='Sheet1'!B1%3AI37&wdHideGridlines=True&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True&ed1JS=false"></iframe>
 
                             </div>
-                        </div>
+
+
+
+
 
                     </div>
                 </div>
@@ -257,7 +238,6 @@ cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palet
             </div>
         </div>
     </div>
-
     <script>
 function myFunction() {
   var x = document.getElementById("navbarNav");

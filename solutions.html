@@ -2,54 +2,78 @@
 <html>
 
 <head>
-    <title>Smart Integarted Energy System</title>
+    <title>Smart Integrated Energy System</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <!--Add Your Scripts -->
 
     <!--Bootstrap Css / Javascript  -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="/stylesheet/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="stylesheet/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 
 <body>
+<!-- Cookie Consent by TermsFeed https://www.TermsFeed.com -->
+<script type="text/javascript" src="https://www.termsfeed.com/public/cookie-consent/4.1.0/cookie-consent.js" charset="UTF-8"></script>
+<script type="text/javascript" charset="UTF-8">
+document.addEventListener('DOMContentLoaded', function () {
+cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palette":"dark","language":"en","page_load_consent_levels":["strictly-necessary"],"notice_banner_reject_button_hide":false,"preferences_center_close_button_hide":false,"page_refresh_confirmation_buttons":false,"website_privacy_policy_url":"https://sies-project.com/privacy.html","website_name":"www.sies-project.com"});
+});
+</script>
+
+<noscript>Free cookie consent management tool by <a href="https://www.termsfeed.com/">TermsFeed</a></noscript>
+<!-- End Cookie Consent by TermsFeed https://www.TermsFeed.com -->
     <header>
 
         <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid" >
 
                 <div class="align_left" >
-                    <h2>Smart Integrated Energy system SIES</h2>
+                    <img id="SIES_logo" src="images/SIES_logo.png">
                 </div>
-                <div class="align_right">
 
-                    <a class="navbar-brand" href="#"></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span> <!-- can put Icon if you want in here -->
+                <div class="Navigation_bar align_right">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon" onclick="myFunction()"></span>
                     </button>
 
-                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup" style="text-align: right" >
-                        <div class="navbar-nav" style="text-align:right;">
-                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
-                            <a class="nav-link" href="video.html">Videos</a>
-                            <a class="nav-link" href="download.html">Downloads</a>
-                            <!--DROP DOWN - Can change to link like above -->
+                    <div class="collapse navbar-collapse" id="navbarNav" >
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                            </li>
+
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     About
                                 </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="project.html">Project Overview</a></li>
+                                <ul class="dropdown-menu align_left">
+                                    <li><a class="dropdown-item" href="usecase_land.html">Use-Cases</a></li>
                                     <li><a class="dropdown-item" href="#">Work Packages</a></li>
                                     <li><a class="dropdown-item" href="partners.html">Partners</a></li>
+                                    <li><a class="dropdown-item" href="Supporters.html">Supporting Partners</a></li>
                                 </ul>
                             </li>
-                            <a class="nav-link" href="contact.html">Contact</a>
-                            <a class="nav-link" href="project.html">Project</a>
-                        </div>
-                    </div>
 
+                            <li class="nav-item">
+                                <a class="nav-link" href="video.html">Videos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="download.html">Downloads</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="solutions.html">Solutions Library</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="project.html">Project</a>
+                            </li>
+
+                        </ul>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -113,32 +137,107 @@
                 <div id="body">
                     <div class="body_container2">
                         <br><br>
-                        <h3>Solution Library </h3> <br><br>
+                        <h3>Solution Library </h3> <br>
+
+                        <p>The Solutions Libary can be seen as a repository for the lessons learned during this project especially in terms of the development of a VPP platform and its associated hardware. The library includes Excel data sheets, pdf descriptions of various use cases, technology and commercial selection aids and
+                            a high level economic assessment tool. The project team has been documenting the processes that have been followed in the assessments so far with a view to provide
+                            outline process flow diagrams as part of the solution library eg a guide on how to assess new projects.<br>
+                            Solutions associated with this work can be categorized along a number of dimensions including but not limited to:</p>
+
+                        <ul class="a" style="list-style-type; circle; color: #000;">
+                            <li>  The technology or assets used. </li>
+                            <li> The algorithms used to maximise revenues &dash; what works and when.</li>
+                            <li>Risk management and trading</li>
+                            <li>Deciding on the appropriate Business models.</li>
+                            <li>Capturing and assessing Value&#47Value Stacking.</li>
+                            <li>VPP software platforms (Technical and software).</li>
+                            <li>Markets for the sale of flexibility.</li>
+                            <li>Routes to Market.</li>
+                        </ul>
+
+                    <p>Many of these elements are interlinked. </p><br><br>
+                        <h3>Using the Site Map Image </h3> <br>
+                        <p>Click on non underlined text for further information in the image below.  Each element of the solutions library provides more detail on a specific Element of the Libary.  Eg VPP Business Models or Routes to Market</p><br>
+                        <p>Hover over text for more information on each element of the Solutions Library.</p><br>
+
                         <p><img src="fff02_files/fff02.png" BORDER="0"  width="1049" height="488" usemap="#inspirationmap" alt="fff02 image" id="map_image"></p>
-                        <H6>Click on non underlined text for further information</H6>
+                        <!--<H6>More words</H6> -->
                         <map name="inspirationmap">
                             <!--area shape="rect" coords="455,190,616,260" href="fff02_files/solutionslibrary.html" ALT="Solutions Library"-->
-                            <area shape="rect" coords="471,39,644,63" href="fff02_files/vppprocessdevelopment.html" ALT="VPP Process Development">
+
+
+                            <area shape="rect" coords="471,39,644,63" href="downloads/reports/PNDC_SIES_position paper.pdf" ALT="VPP Process Development" data-toggle="tooltip" data-placement="top" title="Discusses the projects learning lessons in terms of how to develop a VPP">
+                            <area shape="rect" coords="471,39,644,63" href="downloads/reports/PNDC_SIES_position paper.pdf" ALT="VPP Process Development" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+
                             <!--area shape="rect" coords="229,135,374,159" href="fff02_files/assetchoice.html" ALT="Asset Choice"-->
                             <!--area shape="rect" coords="137,233,282,257" href="fff02_files/routestomarket.html" ALT="Routes to Market"-->
-                            <area shape="rect" coords="0,362,145,406" href="fff02_files/powermarkets.html" ALT="Power Markets">
+
+                            <area shape="rect" coords="0,362,145,406" href="fff02_files/Route2mkt_landing.html" ALT="Power Markets" data-toggle="tooltip" data-placement="top" title="Pdf document that discusses routes to market and provides details on the markets currently available to UK
+                            participants. Report/Links that discusses the various markets.">
+                            <area shape="rect" coords="0,362,145,406" href="fff02_files/Route2mkt_landing.html" ALT="Power Markets" data-toggle="tooltip" data-placement="top" title="Tooltip on top" max>
+
                             <!--area shape="rect" coords="355,340,500,364" href="fff02_files/valuation.html" ALT="Valuation"-->
-                            <area shape="rect" coords="290,456,435,480" href="fff02_files/evaluationtool.html" ALT="Evaluation Tool">
-                            <area shape="rect" coords="537,449,682,473" href="fff02_files/usecaseevaluations.html" ALT="Use Case Evaluations">
+
+                            <area shape="rect" coords="290,456,435,480" href="fff02_files/evaluationtool.html" ALT="Evaluation Tool" data-toggle="tooltip" data-placement="top" title="Simplified Tool for evaluating the suitability of asset market combinations.">
+                            <area shape="rect" coords="290,456,435,480" href="fff02_files/evaluationtool.html" ALT="Evaluation Tool" data-toggle="tooltip" data-placement="top" title="Tooltip on top" max>
+
+
+                            <area shape="rect" coords="537,449,682,473" href="fff02_files/Valuation.html" ALT="Use Case Evaluations"data-toggle="tooltip" data-placement="top"
+                                  title="Outline of VPP Value Assessment">
+                            <area shape="rect" coords="537,449,682,473" href="fff02_files/Valuation.html" ALT="Use Case Evaluations"data-placement="top" title="Tooltip on top" max >
+
+
                             <!--area shape="rect" coords="681,227,826,251" href="fff02_files/riskmanagement.html" ALT="Risk Management"-->
-                            <area shape="rect" coords="837,167,982,191" href="fff02_files/riskvaluation.html" ALT="Risk Valuation">
-                            <area shape="rect" coords="829,280,1034,313" href="fff02_files/riskportfoliomanagement.html" ALT="Risk  &amp; Portfolio Management">
-                            <area shape="rect" coords="188,349,333,393" href="fff02_files/marketprices.html" ALT=" Market Prices">
+
+                            <area shape="rect" coords="837,167,982,191" href="downloads/reports/Risk_value.pdf" ALT="Risk Valuation" data-toggle="tooltip" data-placement="top"
+                            title="PDF outlining approach to value Risk.">
+                            <area shape="rect" coords="837,167,982,191" href="downloads/reports/Risk_value.pdf" ALT="Risk Valuation" data-placement="top" title="Tooltip on top" max >
+
+
+
+
+                            <area shape="rect" coords="829,280,1034,313" href="downloads/reports/risk managment and portfolio sies.pdf" ALT="Risk Portfolio mgmt  &amp; Portfolio Management"
+                            title="PDF Outlining approach to  Risk and Portfolio mgmt.">
+                            <area shape="rect" coords="829,280,1034,313" href="downloads/reports/risk managment and portfolio sies.pdf" ALT="Risk Portfolio mgmt  &amp; Portfolio Management" data-placement="top" title="Tooltip on top" max >
+
+
+                            <area shape="rect" coords="188,349,333,393" href="downloads/reports/Markets prices 2021 VPP.pdf" ALT=" Market Prices" data-toggle="tooltip" data-placement="top"
+                                  title="PDF detailing price patterns in various markets providing flexibility in the UK (2021/2022 Data).">
+                            <area shape="rect" coords="188,349,333,393" href="downloads/reports/Markets prices 2021 VPP.pdf" ALT=" Market Prices" data-toggle="tooltip" data-placement="top" title="Tooltip on top" max >
+
+
                             <!--area shape="rect" coords="648,108,793,132" href="fff02_files/businessmodels.html" ALT="Business Models"-->
-                            <area shape="rect" coords="797,0,942,24" href="fff02_files/framework.html" ALT="Framework">
-                            <area shape="rect" coords="829,98,982,122" href="fff02_files/businessmodelchoice.html" ALT="Business Model Choice">
-                            <area shape="rect" coords="121,45,266,69" href="fff02_files/excelsheets.html" ALT="Excel Sheets">
+                            <area shape="rect" coords="797,0,942,24" href="downloads/reports/BM Framework Sies.pdf" ALT="Framework" data-toggle="tooltip" data-placement="top"
+                                  title="PDF detailing framework available for developing
+                                  Business Models. Also provides a suggestion
+                                  on a preferred approach">
+                            <area shape="rect" coords="797,0,942,24" href="downloads/reports/BM Framework Sies.pdf" ALT="Framework"data-placement="top" title="Tooltip on top" max >
+
+
+                            <area shape="rect" coords="829,98,982,122" href="downloads/reports/BM choice  Sies.pdf" ALT="Business Model Choice" data-toggle="tooltip" data-placement="top"
+                                  title="PDF report providing guidance on how to select a Business Model using a Portfolio Management Approach">
+                            <area shape="rect" coords="829,98,982,122" href="downloads/reports/BM choice  Sies.pdf" ALT="Business Model Choice" data-placement="top" title="Tooltip on top" max >
+
+
+                            <area shape="rect" coords="121,45,266,69" href="downloads/reports/SIES asset data.pdf" ALT="Asset/Price Data Examples - Graphs"data-toggle="tooltip" data-placement="top"
+                            title="Selection of graphs collected from various assets markets">
+                            <area shape="rect" coords="121,45,266,69" href="downloads/reports/SIES asset data.pdf" ALT="Asset/Price Data Examples - Graphs" data-placement="top" title="Tooltip on top" max >
+
                             <!--area shape="rect" coords="745,388,890,412" href="fff02_files/vppsoftware.html" ALT="VPP Software"-->
-                            <area shape="rect" coords="902,366,1047,390" href="fff02_files/existingproviders.html" ALT="Existing Providers">
-                            <area shape="rect" coords="893,424,1038,448" href="fff02_files/oursolution.html" ALT="Our Solution">
-                            <area shape="rect" coords="47,110,214,134" href="fff02_files/etcdemonstratorplant.html" ALT="ETC Demonstrator Plant">
+                            <area shape="rect" coords="902,366,1047,390" href="fff02_files/existingproviders.html" ALT="Existing Providers" data-toggle="tooltip" data-placement="top"
+                                  title="PDF report providing a review of exisitng Commercial VPP software platforms">
+                            <area shape="rect" coords="902,366,1047,390" href="fff02_files/existingproviders.html" ALT="Existing Providers" data-placement="top" title="Tooltip on top" max >
+
+                            <area shape="rect" coords="893,424,1038,448" href="downloads/reports/SIES software design.pdf" ALT="Our Solution" data-toggle="tooltip" data-placement="top"
+                            title="PDF report on the development of the software for this project - our solution">
+                            <area shape="rect" coords="902,366,1047,390" href="downloads/reports/SIES software design.pdf" ALT="Our Solution" data-placement="top" title="Tooltip on top" max >
+
+
+                            <area shape="rect" coords="47,110,214,134" href="https://www.e-t-c.co.uk/" ALT="ETC Demonstrator Plant">
+
 
                         </map>
+                        <br> <br>
                     </div>
                 </div>
 
@@ -146,25 +245,30 @@
                 <!--Repeat Every Page -->
                 <div id="afterthought">
                     <div class="align_center">
-                        <h5>The University of Strathclyde is a charitable body
+                        <h5>An Enhanced Virtual Power Plant (VPP) + Energy Pool Integration for Local and Regional Resistance
                         </h5>
                     </div>
                 </div>
                 <div class="spacer"></div>
+                <br>
                 <footer>
                     <div class="footer">
                         <div class="footer_inner">
                             <div class="grid_2">
                                 <div class="align_left">
                                     <a style="list-style-type:none; text-decoration: none; color: #0078ae; font-size: 0.8rem;"
-                                        href="https://www.strath.ac.uk/engineering/">
-                                        Uni of Strathclyde <br>
-                                        Faculty of Engineering <br>
-                                        <p style="font-size: 0.6rem;"> &copy; 2023 Ailean & Gary Howorth</p>
+                                       href="https://www.strath.ac.uk/engineering/">
+                                        SIES Project <br>
+                                        <a href="https://twitter.com/SiesProjectVPP?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @SiesProjectVPP</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                                        <br><br>
+                                        <p style="font-size: 0.6rem;"> Site Design &copy; 2023 Ailean & Gary Howorth</p>
                                     </a>
                                 </div>
-                                <div class="align_right">
-                                    <img src="" alt="Uni Icon">
+
+                                <div class="align_right grid_3">
+                                    <img src="images/SIES_logo.png" id="SIES_footer_logo" class="footer_images">
+                                    <a href="https://www.scottish-enterprise.com/"><img src="images/scottish-enterprise-logo-vector.jpg" id="Scottish Enterprise_logo" class="footer_images"></a>
+                                    <a class="footer_images" href="https://www.era-learn.eu/network-information/networks/en-sgplusregsys/1st-regsys-joint-call-2018/smart-integrated-energy-systems-2022-enhanced-virtual-power-plant-vpp-energy-pool-integration-for-local-and-regional-resilience"><img src="images/eu_funded_en.jpg" id="EU_logo"></a>
                                 </div>
                             </div>
                         </div>
@@ -174,6 +278,46 @@
             </div>
         </div>
     </div>
+
+    <script>
+function myFunction() {
+  var x = document.getElementById("navbarNav");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+
+
+
+</script>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<script>
+            // Get the button
+            let mybutton = document.getElementById("myBtn");
+
+            // When the user scrolls down 300px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 300) {
+                mybutton.style.display = "block";
+              } else {
+                mybutton.style.display = "none";
+              }
+            }
+
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+</script>
+
+
 
 </body>
 

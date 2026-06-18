@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/html">
+<html>
 
 <head>
     <title>Smart Integrated Energy System</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-    <!--base href="file:///E:/sies/New%20Site2/seis%20Web/"-->
     <!--Add Your Scripts -->
 
     <!--Bootstrap Css / Javascript  -->
@@ -14,7 +13,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 
-<body>
 <body>
 <!-- Cookie Consent by TermsFeed https://www.TermsFeed.com -->
 <script type="text/javascript" src="https://www.termsfeed.com/public/cookie-consent/4.1.0/cookie-consent.js" charset="UTF-8"></script>
@@ -26,7 +24,6 @@ cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palet
 
 <noscript>Free cookie consent management tool by <a href="https://www.termsfeed.com/">TermsFeed</a></noscript>
 <!-- End Cookie Consent by TermsFeed https://www.TermsFeed.com -->
-
     <header>
 
         <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
@@ -80,6 +77,7 @@ cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palet
                 </div>
             </div>
         </nav>
+
     </header>
 
     <div id="wrap_outer">
@@ -138,84 +136,85 @@ cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palet
 
                 <div id="body">
                     <div class="body_container">
-                        <h1>Project Videos </h1>
+                        <h1>Use Case 2: Myres Hill Wind Turbine with Battery Exporting to Grid </h1>
                         <br><br>
-                        <div class="Content_block">
-                            <div class="content_block_inner">
+                        <h4><strong>Case Overview</strong> </h4>
+                        <p>
+                            A small 225 kW Vestas V27 wind turbine  + 2 x 0.9 MW turbines  situated at Myres Hill near East Kilbride Scotland UK.  The turbines are connected to an 11 KV grid connection and feeds
+                            the Castle Grid Supply point at 33kV/275kV.  A small load is also connected near the Myres Hill, but is not used in this scenario. Note a hypothetical battery is included in this case and  wind output
+                            is assumed to be sold on an Octopus Agile Outgoing (Export) tariff.  There is an export limit.
+                        </p>
+                        <h5><strong>Assets</strong></h5>
+                        </p>
+                        <ul class="a" style="list-style-type; circle; color: #000;">
+                            <li> ~ 2 MW Wind Turbines</li>
+                            <li> 1 MW 2 MWh Battery</li>
+                            <li>MPC Control.</li>
+                            <li>Load Nearby ~60 kW</li>
+                        </ul>
+                        <p>
+                        <h5><strong>Market</strong></h5>
+                        <p>
+                            Usecase 2 assumes that the wind turbine sells to it power on an octopus outgoing agile tariff. Click here for more details on the tariff.
+                        </p>
+                        <h5><strong>Control and Data Capture</strong></h5>
+                        <p>
+                            Usecase 2 assumes the use of MPC control.  A look ahead function uses future prices and determines whether or not to export wind output or store into a battery.
+                            At the appropriate times the battery is dischared to maximise revenues to the site.
 
-                                <div class="grid_2">
+                        <h5><strong>Animation</strong></h5>
+                        <p>
+                            The video below conceptualises the current setup in block form and shows a simulation/animation of the assets described above.  Arrow sizes represent flows associated with use case.
+                        </p>
 
-                                    <div class="video_box">
-                                        <div class="video_box_inner">
-                                            <h2> VPP's: The Current State of the Art 1</h2>
-                                            <iframe width="500" height="315"
-                                                src="https://www.youtube.com/embed/7IbZF5ZOpZ4"
-                                                title="YouTube video player" frameborder="0"
-                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                                allowfullscreen></iframe>
-                                        </div>
-                                        <div class="video_box_inner">
-                                            <h2> VPP's: The Current State of the Art 2</h2>
-                                            <iframe width="500" height="315"
-                                                    src="https://www.youtube.com/embed/uOhM7hj4zKs"
-                                                    title="YouTube video player" frameborder="0"
-                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                                    allowfullscreen></iframe>
-                                        </div>
-                                    </div>
-                                    <div class="video_box">
-                                        <div class="video_box_inner">
-                                            <h2> Introduction to SIES</h2>
-                                            <video width="500" height="315" controls>
-                                                <source src="images/TestCIREDPaperEV.mp4" type="video/mp4">
-                                            </video>
-                                        </div>
-                                    </div>
-                                    <div class="video_box">
-                                        <div class="video_box_inner">
-                                            <h2> How does the SIES VPP Work?</h2>
-                                            <video width="500" height="315" controls>
-                                                <source src="images/SIES software design vpp animation.mp4" type="video/mp4">
-                                            </video>
-                                        </div>
-                                    </div>
-
+                        <p>
+                        </p>
+                        <div class="ui container">
+                            <div class="">
+                                <figure>
+                                    <img id="map_image6" alt="MH Animatiom" src="images/Animation_usecase2a1.gif"/>
+                                    <figcaption><em>Figure 1. Use Case 2 Myres Hill with Battery Animation FLows .</em></figcaption>
+                                </figure>
+                            </div>
+                            <br>
+                            <div class="">
+                                <div class="">
+                                    <figure>
+                                        <img id="map_image6c" alt="MH with batt graphs Animatiom" src="images/Animation_usecase2b.gif"/>
+                                        <figcaption><em>Figure 2. Use Case Myres Hill with Battery Graphs .</em></figcaption>
+                                    </figure>
                                 </div>
+                                <br>
+                                <h5><strong>Notes</strong></h5>
+                                <p>
+                                <ul class="a" style="list-style-type; circle; color: #000;">
+                                    <li> Revenues = Export to grid - Import from Grid Revenues</li>
+                                    <li> Simulation over one week; Half Hour by Half Hour.  Sim start from HH - 1</li>
+                                    <li> Graphs show rolling window.  Note the right hand side of the graph shows the latest output. Those to the left of that point represent the historical points</li>
+                                    <li> Note zero flow lines still shown</li>
+                                </ul>
+                                </p>
 
-                            </div>
-                        </div>
+                                <h5><strong>Commentary</strong></h5>
+                                <p>
+                                     In this case, the net benefits of the addition of a battery of the size assumed is around ~&pound2,000/week which would equate to annual revenue of circa ~&pound100,000.
+                                    Of course this is assumption dependent and assumes the uses of a dynamic time of use tariff. These additonal revenues would need to cover the initial cost of the battery and its ongoing maintenance.  Around 8.5% of the wind output was
+                                    diverted to the battery over the week.
+                                    <br><br>
+                                    Figure 3 below shows the differences in revenues generated from using a battery against not using a battery for 336 half hours(hh).
 
-                        <div class="Content_block">
-                            <div class="content_block_inner">
-
-                                <!--   vids extra
-                                <div class="grid_2">
-
-                                    <div class="video_box">
-                                        <h2> Video 3</h2>
-                                        <div class="video_box_inner">
-                                            <iframe width="500" height="315"
-                                                    src="https://www.youtube.com/embed/aznOL753eiQ"
-                                                    title="YouTube video player" frameborder="0"
-                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                                    allowfullscreen></iframe>
-                                        </div>
+                                <div class="ui container">
+                                    <div class="">
+                                        <figure>
+                                            <img id="" alt="difference in revs" src="images/diff_revs_usecase2.png"/>    <!--Animation_usecase.gif"-->
+                                            <figcaption><em>Figure 3. Use Case 2 Difference in Revenues (Battery vs No Battery Case) .</em></figcaption>
+                                        </figure>
                                     </div>
-                                    <div class="video_box">
-                                        <div class="video_box_inner">
-                                            <h2> Video 4</h2>
-                                            <iframe width="500" height="315"
-                                                src="https://www.youtube.com/embed/yqqaW8DCc-I"
-                                                title="YouTube video player" frameborder="0"
-                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                                allowfullscreen></iframe>
-                                        </div>
-                                    </div>
+                                    <br>
+                                    Negative revenues occur when the battery is charged from renewables and the positive values occur when the battery is discharged. There are 12 times when revenues are in excess of &pound150/hh and 22 in excess of &pound100/hh.
 
-                                </div>    -->
+                                </p>
 
-                            </div>
-                        </div>
 
                     </div>
                 </div>
@@ -269,6 +268,30 @@ function myFunction() {
 }
 </script>
 
+            </script>
+
+            <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+            <script>
+            // Get the button
+            let mybutton = document.getElementById("myBtn");
+
+            // When the user scrolls down 300px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 300) {
+                mybutton.style.display = "block";
+              } else {
+                mybutton.style.display = "none";
+              }
+            }
+
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+</script>
 
 
 </body>
